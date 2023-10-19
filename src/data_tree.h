@@ -10,6 +10,7 @@
 #include <vector>
 
 enum class five_tuples {
+  just_init,
   state,    //
   init,     //
   accept,   //
@@ -51,6 +52,10 @@ class data_tree {
     return std::get<2>(_[_index]);
   }
 
+
+  five_tuples now_state = five_tuples::just_init;
+ public:
+  void process_line(std::string one_line);
 
 };
 
