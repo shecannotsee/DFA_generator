@@ -2,8 +2,8 @@
 // Created by shecannotsee on 23-10-19.
 //
 
-#ifndef DFA_GENERATOR_T1_SCANNING_TEST_H
-#define DFA_GENERATOR_T1_SCANNING_TEST_H
+#ifndef DFA_GENERATOR_T1__SCANNING__TEST_H
+#define DFA_GENERATOR_T1__SCANNING__TEST_H
 
 #include <scanning.h>
 
@@ -38,4 +38,4 @@ TEST(scanning,get_line) {
   ASSERT_EQ(lines[26],"");
 }
 
-#endif //DFA_GENERATOR_T1_SCANNING_TEST_H
+#endif //DFA_GENERATOR_T1__SCANNING__TEST_H
