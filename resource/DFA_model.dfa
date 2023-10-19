@@ -15,7 +15,6 @@ Q2 : '\\'
 Q3 : ' '
 Q4 : 'other'
 
-
 Transition_Function
 S1(Q1) > S3
 S1(Q2) > S2
