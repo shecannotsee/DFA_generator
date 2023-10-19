@@ -253,7 +253,7 @@ std::string data_tree::generate() {
     define_ += "namespace DFA_model {\n\n";
     content = define_ + content;
     content += "}// namespace DFA_model \n\n";
-    content += "#endif // DFA_MODEL_H\n";
+    content += "#endif // DFA_MODEL_H\n\n";
   }
   return content;
 }
