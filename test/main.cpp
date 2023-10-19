@@ -3,6 +3,7 @@
 #include "global_test_set.h"
 #include "test_example.h"
 // test_suite
+#include "t1_scanning_test.h"
 // easy_test
 // logic_test
 
