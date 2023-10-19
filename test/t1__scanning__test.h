@@ -7,8 +7,10 @@
 
 #include <scanning.h>
 
+const std::string DFA_model = "../resource/DFA_model.dfa";
+
 TEST(scanning,get_line) {
-  auto lines = scanning::get_line("../resource/DFA_model.dfa");
+  auto lines = scanning::get_line(DFA_model);
   ASSERT_EQ(lines[0], "States");
   ASSERT_EQ(lines[1], "S1 : Explanation of S1");
   ASSERT_EQ(lines[2], "S2 : Explanation of S2");
