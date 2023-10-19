@@ -40,7 +40,7 @@ class data_tree {
   static std::string get_alphabet(double_tuples _, int _index) {
     return std::get<0>(_[_index]);
   }
-  static std::string get_alphabet_read(double_tuples _, int _index) {
+  static std::string get_alphabet_real(double_tuples _, int _index) {
     return std::get<1>(_[_index]);
   }
   third_tuples transition_function_;
@@ -58,11 +58,11 @@ class data_tree {
   five_tuples now_state_ = five_tuples::just_init;
 
  private:
-  void process_states(std::string one_line);
-  void process_init_state(std::string one_line);
-  void process_accept_state(std::string one_line);
-  void process_alphabet(std::string one_line);
-  void process_transition_function(std::string one_line);
+  void process_states(const std::string& one_line);
+  void process_init_state(const std::string& one_line);
+  void process_accept_state(const std::string& one_line);
+  void process_alphabet(const std::string& one_line);
+  void process_transition_function(const std::string& one_line);
 
  public:
   void process_line(std::string one_line);
