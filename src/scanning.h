@@ -13,7 +13,7 @@
 
 namespace scanning {
 
-std::vector<std::string> get_line(std::string file_name) {
+static std::vector<std::string> get_line(const std::string& file_name) {
   std::vector<std::string> ret{};
   std::ifstream inputFile(file_name); // 替换为您要读取的文件名
 
@@ -23,12 +23,12 @@ std::vector<std::string> get_line(std::string file_name) {
 
   std::string line;
   while (std::getline(inputFile, line)) {
-    ret.emplace_back(std::string(line));
+    ret.emplace_back(line);
   }
 
   inputFile.close(); // 关闭文件
   return ret;
-}
+};
 
 }// namespace scanning
 
