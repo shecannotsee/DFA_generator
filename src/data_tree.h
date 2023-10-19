@@ -67,6 +67,8 @@ class data_tree {
  public:
   void process_line(std::string one_line);
 
+ public:
+  std::string generate();
 };
 
 
