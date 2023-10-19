@@ -9,7 +9,9 @@
 #include <tuple>
 #include <vector>
 
-enum class five_tuples {
+#include <error_message.h>
+
+enum class five_tuples : int {
   just_init,
   state,    //
   init,     //
