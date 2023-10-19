@@ -13,7 +13,7 @@ Alphabet
 Q1 : '\n'
 Q2 : '\\'
 Q3 : ' '
-Q4 : ' '
+Q4 : 'other'
 
 
 Transition_Function
