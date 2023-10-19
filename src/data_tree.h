@@ -53,7 +53,15 @@ class data_tree {
   }
 
 
-  five_tuples now_state = five_tuples::just_init;
+  five_tuples now_state_ = five_tuples::just_init;
+
+ private:
+  void process_states(std::string one_line);
+  void process_init_state(std::string one_line);
+  void process_accept_state(std::string one_line);
+  void process_alphabet(std::string one_line);
+  void process_transition_function(std::string one_line);
+
  public:
   void process_line(std::string one_line);
 
