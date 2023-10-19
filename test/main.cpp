@@ -4,6 +4,7 @@
 #include "test_example.h"
 // test_suite
 #include "t1__scanning__test.h"
+#include "t2__data_tree__test.h"
 // easy_test
 // logic_test
 
