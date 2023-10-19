@@ -69,4 +69,17 @@ TEST(data_tree, process_line) {
 
 }
 
+TEST(data_tree, generate) {
+  auto lines = scanning::get_line(DFA_model);
+  data_tree entity;
+  for (const auto& line:lines) {
+    entity.process_line(line);
+  }
+
+  std::cout << entity.generate();
+  int c;
+  std::cin >> c;
+
+}
+
 #endif //DFA_GENERATOR_T2__DATA_TREE__TEST_H
